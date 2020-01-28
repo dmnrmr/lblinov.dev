@@ -1,0 +1,13 @@
+@import './mixins';
+
+.lb-content {
+  background-color: #f8f9fa;
+
+  &__body {
+    @include block;
+
+    &-section {
+      padding: 1rem 0;
+    }
+  }
+}

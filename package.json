@@ -4,13 +4,21 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "lite-server",
+    "start": "concurrently 'npm:styles-watch' 'lite-server'",
+    "styles": "node-sass src/styles/index.scss index.css --importer node_modules/node-sass-import",
+    "styles-watch": "npm run styles -- -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "2.5.4"
+    "concurrently": "5.1.0",
+    "lite-server": "2.5.4",
+    "node-sass": "4.13.1",
+    "node-sass-import": "2.0.1"
+  },
+  "dependencies": {
+    "modern-css-reset": "^1.0.4"
   }
 }

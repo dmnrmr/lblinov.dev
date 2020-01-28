@@ -1,0 +1,15 @@
+@import 'modern-css-reset';
+@import './header.scss';
+@import './content.scss';
+@import './footer.scss';
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8125rem;
+}
+
+.lb-content {
+  flex-grow: 1;
+}
