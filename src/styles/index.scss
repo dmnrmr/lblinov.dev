@@ -1,13 +1,13 @@
 @import 'modern-css-reset';
-@import './header.scss';
-@import './content.scss';
-@import './footer.scss';
+@import './header';
+@import './content';
+@import './footer';
 
 body {
   display: flex;
   flex-direction: column;
+  font-size: 0.8125rem;
   font-family: 'Open Sans', sans-serif;
-  font-size: .8125rem;
 }
 
 .lb-content {
