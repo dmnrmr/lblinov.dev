@@ -1,9 +1,0 @@
-@import './mixins';
-
-.lb-footer {
-  padding: 1rem 0;
-
-  &__body {
-    @include block;
-  }
-}

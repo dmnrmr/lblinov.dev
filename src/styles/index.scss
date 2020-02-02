@@ -1,15 +1,15 @@
-@import 'modern-css-reset';
-@import './header';
-@import './content';
-@import './footer';
+@import './timeline';
+@import './entry';
 
 body {
   display: flex;
-  flex-direction: column;
-  font-size: 0.8125rem;
-  font-family: 'Open Sans', sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', arial, sans-serif;
 }
 
-.lb-content {
-  flex-grow: 1;
+* {
+  box-sizing: border-box;
 }

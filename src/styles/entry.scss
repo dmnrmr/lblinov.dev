@@ -1,0 +1,49 @@
+@import './variables';
+
+.lb-timeline-entry {
+  display: grid;
+  grid-template-columns: 400px auto;
+  padding-bottom: 2rem;
+  column-gap: 80px;
+
+  &__header {
+    position: relative;
+    text-align: right;
+
+    &:before {
+      position: absolute;
+      top: 4px;
+      right: -48px;
+      z-index: 99;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border: 4px solid #000;
+      border-radius: 100%;
+      content: '';
+    }
+
+    &-title {
+      margin: 0;
+      font-size: 120%;
+    }
+
+    &-subtitle {
+      margin: 0;
+      font-size: 100%;
+    }
+  }
+
+  &__body {
+    &-intro {
+      margin-top: 0;
+      font-weight: 400;
+    }
+
+    &-description {
+      padding-left: 1rem;
+      color: #aaa;
+      list-style-type: none;
+    }
+  }
+}
