@@ -6,6 +6,7 @@ extends:
 plugins:
   - stylelint-scss
 rules:
+  function-parentheses-space-inside: never-single-line
   max-nesting-depth: 5
   order/properties-alphabetical-order: null
   selector-pseudo-element-colon-notation: single
