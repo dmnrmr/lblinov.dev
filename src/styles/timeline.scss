@@ -1,0 +1,31 @@
+@import './variables';
+@import './mixins';
+
+.lb-timeline {
+  position: relative;
+  width: 100%;
+  max-width: $content-max-width;
+  padding: 2.5rem 0;
+
+  @include tablet {
+    max-width: 100%;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: $left-column-width + $column-gap / 2 - $border-width / 2;
+    width: $border-width;
+    background: #ddd;
+    content: '';
+
+    @include tablet {
+      left: $left-column-width-compact + $column-gap-compact / 2 - $border-width / 2;
+    }
+
+    @include mobile {
+      left: 0;
+    }
+  }
+}

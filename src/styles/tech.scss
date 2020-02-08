@@ -1,0 +1,87 @@
+.lb-tech {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background: url('../../assets/icons.png') 0 16px / cover no-repeat;
+    content: '';
+  }
+
+  &--github:before {
+    background-position-y: 0;
+  }
+
+  &--linkedin:before {
+    background-position-y: -16px;
+  }
+
+  &--angular:before {
+    background-position-y: -32px;
+  }
+
+  &--angularjs:before {
+    background-position-y: -48px;
+  }
+
+  &--bamboo:before {
+    background-position-y: -64px;
+  }
+
+  &--fatwire:before {
+    background-position-y: -80px;
+  }
+
+  &--jasmine:before {
+    background-position-y: -96px;
+  }
+
+  &--jquery:before {
+    background-position-y: -112px;
+  }
+
+  &--js:before {
+    background-position-y: -128px;
+  }
+
+  &--karma:before {
+    background-position-y: -144px;
+  }
+
+  &--ngrx:before {
+    background-position-y: -160px;
+  }
+
+  &--react:before {
+    background-position-y: -176px;
+  }
+
+  &--redux:before {
+    background-position-y: -192px;
+  }
+
+  &--riot:before {
+    background-position-y: -208px;
+  }
+
+  &--robot:before {
+    background-position-y: -224px;
+  }
+
+  &--selenium:before {
+    background-position-y: -240px;
+  }
+
+  &--typescript:before {
+    background-position-y: -256px;
+  }
+
+  &--webpack:before {
+    background-position-y: -272px;
+  }
+}

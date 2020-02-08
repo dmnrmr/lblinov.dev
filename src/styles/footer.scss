@@ -1,9 +1,34 @@
-@import './mixins';
+@import './variables';
 
 .lb-footer {
-  padding: 1rem 0;
+  display: grid;
+  grid-template-areas: '....... entry';
+  grid-template-columns: $left-column-width + $column-gap / 2 auto;
+  width: 100%;
+  max-width: $content-max-width;
+  padding-top: 1rem;
+  column-gap: 0;
 
-  &__body {
-    @include block;
+  @include tablet {
+    grid-template-columns: $left-column-width-compact + $column-gap-compact / 2 auto;
+    max-width: 100%;
+  }
+
+  @include mobile {
+    display: block;
+  }
+
+  &__contacts {
+    display: flex;
+    grid-area: entry;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      margin-right: 1rem;
+      color: inherit;
+      text-decoration: none;
+    }
   }
 }

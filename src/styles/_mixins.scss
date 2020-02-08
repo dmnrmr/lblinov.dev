@@ -1,7 +1,16 @@
 @import './variables';
 
-@mixin block {
-  width: 100%;
-  max-width: $content-width;
-  margin: 0 auto !important;
+$tablet-breakpoint: 1279px;
+$mobile-breakpoint: 767px;
+
+@mixin tablet {
+  @media (max-width: #{$tablet-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-breakpoint}) {
+    @content;
+  }
 }
