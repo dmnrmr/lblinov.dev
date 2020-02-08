@@ -1,0 +1,23 @@
+.lb-footer {
+  display: grid;
+  grid-template-areas: '....... entry';
+  grid-template-columns: 440px auto;
+  width: 100%;
+  max-width: 1280px;
+  padding-top: 1rem;
+  column-gap: 0;
+
+  &__contacts {
+    display: flex;
+    grid-area: entry;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      margin-right: 1rem;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
