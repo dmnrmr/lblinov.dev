@@ -44,6 +44,8 @@
     padding-left: 1rem;
     color: #aaa;
     list-style-type: none; }
+    .lb-timeline-entry__body-description-item {
+      padding-bottom: 1rem; }
 
 body {
   display: flex;

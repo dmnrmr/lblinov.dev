@@ -44,6 +44,10 @@
       padding-left: 1rem;
       color: #aaa;
       list-style-type: none;
+
+      &-item {
+        padding-bottom: 1rem;
+      }
     }
   }
 }
