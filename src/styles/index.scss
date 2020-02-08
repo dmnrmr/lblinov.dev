@@ -1,11 +1,14 @@
 @import './timeline';
 @import './entry';
+@import './header';
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
+  padding: 2.5rem 0;
   font-size: 14px;
   font-family: 'Source Sans Pro', arial, sans-serif;
 }

@@ -1,10 +1,20 @@
 @import './variables';
 
 .lb-timeline-entry {
+  $entry: &;
+
   display: grid;
   grid-template-columns: 400px auto;
   padding-bottom: 2rem;
   column-gap: 80px;
+
+  &:last-child {
+    padding-bottom: 0;
+
+    #{$entry}__body-description {
+      margin-bottom: 0;
+    }
+  }
 
   &__header {
     position: relative;
@@ -12,7 +22,7 @@
 
     &:before {
       position: absolute;
-      top: 4px;
+      top: 2px;
       right: -48px;
       z-index: 99;
       width: 8px;
@@ -26,6 +36,7 @@
     &-title {
       margin: 0;
       font-size: 120%;
+      line-height: 100%;
     }
 
     &-subtitle {
@@ -47,6 +58,10 @@
 
       &-item {
         padding-bottom: 1rem;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
       }
     }
   }
