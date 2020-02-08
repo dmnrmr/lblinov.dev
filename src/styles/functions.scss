@@ -1,3 +1,0 @@
-@function url-base64-ico($data) {
-  @return url('data:image/x-icon;base64,#{$data}');
-}
