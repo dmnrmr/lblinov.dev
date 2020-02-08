@@ -1,3 +1,4 @@
+@import './variables';
 @import './header';
 @import './timeline';
 @import './entry';
@@ -10,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding: 2.5rem 0;
+  padding: 2.5rem $body-padding;
   font-size: 14px;
   font-family: 'Source Sans Pro', arial, sans-serif;
 }

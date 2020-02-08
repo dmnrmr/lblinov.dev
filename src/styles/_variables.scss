@@ -1,2 +1,10 @@
+$body-padding: 20px;
+
 $border-width: 4px;
-$dot-diameter: 8px;
+$dot-diameter: $border-width * 2;
+
+$left-column-width: 400px;
+$left-column-width-compact: 200px;
+$column-gap: 80px;
+$column-gap-compact: 40px;
+$content-max-width: 1240px;

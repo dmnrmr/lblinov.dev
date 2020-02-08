@@ -1,13 +1,29 @@
+@import './variables';
+@import './mixins';
+
 .lb-header {
   display: grid;
-  grid-template-columns: 440px auto;
+  grid-template-columns: $left-column-width + $column-gap / 2 auto;
   width: 100%;
-  max-width: 1280px;
+  max-width: $content-max-width;
   padding-bottom: 1rem;
   column-gap: 0;
 
+  @include tablet {
+    grid-template-columns: $left-column-width-compact + $column-gap-compact / 2 auto;
+    max-width: 100%;
+  }
+
+  @include mobile {
+    display: block;
+  }
+
   &__entry {
     text-align: right;
+
+    @include mobile {
+      text-align: left;
+    }
 
     &-title,
     &-subtitle {
